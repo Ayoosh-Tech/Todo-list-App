@@ -1,0 +1,155 @@
+body{
+font-family: Arial;
+background: #0f172a;
+display:flex;
+justify-content:center;
+align-items: flex-start;
+height:100vh;
+color:white;
+padding-top: 100px;
+}
+
+.container{
+text-align:center;
+width:350px;
+background: rgba(30,41,59,0.9);
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+backdrop-filter: blur(10px);
+}
+
+h1{
+margin-bottom:20px;
+}
+
+.input-section{
+display:flex;
+gap:10px;
+width: 65px;
+margin-left: 20px;
+height: 55px;
+}
+
+input{
+flex:1;
+padding:12px;
+border-radius:10px;
+border: 2px solid #3d5469f1;
+color: #fff;
+background: #212d38;
+outline: none; /* removes default blue glow in some browsers */
+ transition: border 0.3s;
+}
+
+input:focus{
+  border: 2px solid #1f4f7dc4; /* border color on click/focus */
+  }
+
+button{
+padding:12px 20px;
+background:#6366f1;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+ul{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+li{
+background:#1e293b;
+padding:12px;
+margin-top:10px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items: center;
+animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/*.task-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.task-icon {
+  width: 70px;
+  height: 70px;
+  background: #6366f1; /* purple */
+ /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; /* rounded square */
+ /* margin: 0 auto 15px;
+  transition: all 0.3s ease; /* smooth hover animation */
+/*  cursor: pointer;
+}
+
+.task-icon span {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+}*/
+.task-header{
+text-align:center;
+color:white;
+margin-bottom:30px;
+}
+
+.task-icon{
+width:70px;
+height:70px;
+background:#6366f1;
+border-radius:18px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0 auto 15px;
+}
+
+.check-circle{
+width:35px;
+height:35px;
+background:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#6366f1;
+font-weight:bold;
+font-size:18px;
+}
+
+li button{
+background:#6366f1;
+border:none;
+border-radius:8px;
+padding:6px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.completed{
+text-decoration: line-through;
+opacity: 0.6;
+}
